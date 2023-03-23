@@ -180,6 +180,7 @@ public class ServletProduct extends ServletBase{
                     }
                 }else{
                     if(fileItem.getSize()!=0){
+                        System.out.println(fileItem.getSize());
                         s = uploadFile(fileItem);
                         delpic=true;
                     }
@@ -192,6 +193,7 @@ public class ServletProduct extends ServletBase{
             Product delpropic=new Product();
             delpropic.setProductId(pro.getProductId());
             String productPic = productDao.getProduct(delpropic).get(0).getProductPic();
+            System.out.println(this.getServletContext().getRealPath("/upload/")+productPic);
             File oldpic=new File(this.getServletContext().getRealPath("/upload/")+productPic);
             oldpic.delete();
         }

@@ -1,2 +1,9 @@
-# pokces_bsk
+
 简单的必胜客点餐系统
+数据库为mysql
+使用mvc加三层架构的模式
+使用druid为数据源spring的JdbcTemplate来连接数据库
+jackson来前后端传输数据
+jsp使用jstl,jquery,handlebars,layui,layer
+第一次做的demo很水，就这样吧
+

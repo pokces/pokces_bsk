@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script type="text/javascript" src="js/handlebars.js"></script>
 <div class="m-shopping" id="cart">
     <div class="m-cart">
         <div id="close">

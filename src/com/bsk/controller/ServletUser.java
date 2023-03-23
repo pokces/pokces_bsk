@@ -60,7 +60,6 @@ public class ServletUser extends ServletBase {
         User user = fullElement(request);
         String base64encodedString = Base64.getEncoder().encodeToString(user.getUserPwd().getBytes("utf-8"));
         user.setUserPwd(base64encodedString);
-        System.out.println(user);
         User u = new User();
         u.setUserTel(user.getUserTel());
         if (userDao.getUser(u, 0, 0).size()==0) {

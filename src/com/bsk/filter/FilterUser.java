@@ -19,7 +19,6 @@ public class FilterUser implements Filter {
         res.setContentType("text/html;charset=UTF-8");
         re.setCharacterEncoding("utf-8");
         String requestURL = re.getRequestURL().toString();
-        System.out.println(requestURL);
         if(re.getSession().getAttribute("loginuser")==null){
             if(requestURL.contains("user_list.jsp")||requestURL.contains("user_info.jsp")||requestURL.contains("product.jsp")||
                     requestURL.contains("order_submit.jsp")||requestURL.contains("order.jsp")||

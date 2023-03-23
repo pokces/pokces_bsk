@@ -24,8 +24,7 @@ public class FilterUser implements Filter {
                     requestURL.contains("order_submit.jsp")||requestURL.contains("order.jsp")||
                     requestURL.contains("member.jsp")||requestURL.contains("jumpAddress")||requestURL.contains("jumpUser")||
                     requestURL.contains("getAllCategory")||requestURL.contains("jumpProduct")||requestURL.contains("jumpOrderManage")) {
-                System.out.println("拦截了");
-                res.sendRedirect("main.jsp");
+                    res.sendRedirect("main.jsp");
             }else{
                 chain.doFilter(req, resp);
             }
